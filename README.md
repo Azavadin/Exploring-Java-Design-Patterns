@@ -23,3 +23,20 @@ Supporting new kind of products is difficult.
 
 Factory Method:
 Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory method lets a class defer instantiation to subclasses. This is also called as virtual constructor because it gives an illusion that construction of the object is polymorphic.
+
+Singleton:
+Ensure a class has single instance and provide a global point of access to it.
+When the sole instance should be extensible by subclassing, and clients should be able to use an extended instance without modifying their code.
+Why Enums are the best way to implement Singleton Design Pattern:
+They prevent construction based attack i.e. You cannot create an object for an enum.
+They will ensure thread safety and remove serialization problems.
+
+Builder Pattern:
+Helps to streamline or standardize object creation while allowing each step of creation to vary.
+
+Prototype Pattern:
+Specify the kinds of objects to create using a protypical instance, and create new objects by copying this prototype.
+
+Why Prototypal Pattern:
+In languages like Java and C# , "new" is not polymorphic. This can be addressed by Prototypal inheritance.
+
